@@ -42,7 +42,7 @@ TEMPLATE = """<!DOCTYPE html>
     <!-- seo:start -->
 {seo}
     <!-- seo:end -->
-    <link rel="stylesheet" href="../styles.css?v=24" />
+    <link rel="stylesheet" href="../styles.css?v=25" />
   </head>
   <body>
     <main class="page">
@@ -60,7 +60,7 @@ TEMPLATE = """<!DOCTYPE html>
           <svg class="post-back-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M15 18l-6-6 6-6" />
           </svg>
-          <span>Back to posts</span>
+          <span class="post-back-label">Back to posts</span>
         </a>
       </nav>
 

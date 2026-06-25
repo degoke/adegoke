@@ -197,6 +197,7 @@ a:hover {
 
 .intro-writing .intro-text {
   max-width: none;
+  margin-top: 0;
 }
 
 .social-links {
@@ -379,10 +380,7 @@ a:hover {
 }
 
 .summary-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.9rem;
-  align-items: start;
+  display: block;
   padding: 0.1rem 0;
   text-decoration: none;
 }
@@ -405,27 +403,9 @@ a:hover {
   color: var(--accent);
 }
 
-.summary-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  margin-top: 0.15rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--bg-soft);
-  color: var(--muted);
-}
-
-.summary-icon svg {
-  width: 1rem;
-  height: 1rem;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.summary-title .entry-link-icon {
+  width: 0.72rem;
+  height: 0.72rem;
 }
 
 .summary-copy {
@@ -435,7 +415,9 @@ a:hover {
 .summary-title,
 .writing-entry-title,
 .writing-list a {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   color: var(--text);
   font-family: var(--font-serif);
   font-size: var(--text-body);
@@ -485,30 +467,29 @@ a:hover {
 .post-back {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.9rem 0.45rem 0.7rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--bg-soft);
-  color: var(--muted);
+  gap: 0.35rem;
+  color: var(--text);
   font-size: var(--text-small);
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.4;
   text-decoration: none;
-  transition:
-    border-color 140ms ease,
-    color 140ms ease,
-    background-color 140ms ease;
+  transition: color 140ms ease;
 }
 
 .post-back:hover {
-  color: var(--text);
-  border-color: var(--text);
-  background: var(--bg-soft);
+  color: var(--accent);
+}
+
+.post-back:hover .post-back-label {
+  text-decoration: underline;
+  text-decoration-color: rgba(198, 97, 63, 0.45);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .post-back-icon {
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 0.72rem;
+  height: 0.72rem;
   flex-shrink: 0;
   fill: none;
   stroke: currentColor;
@@ -681,15 +662,6 @@ a:hover {
     grid-template-columns: 1fr;
     gap: 0.75rem;
     padding: 1.5rem 0 1.9rem;
-  }
-
-  .summary-item {
-    grid-template-columns: 1fr;
-    gap: 0.55rem;
-  }
-
-  .summary-icon {
-    margin-top: 0;
   }
 }
 
