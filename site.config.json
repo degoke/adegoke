@@ -1,0 +1,142 @@
+{
+  "siteUrl": "https://adegoke.xyz",
+  "siteName": "Adegoke Adewoye",
+  "locale": "en_US",
+  "twitterHandle": "@degokeadewoye",
+  "defaultImage": "/images/portrait.png",
+  "person": {
+    "name": "Adegoke Adewoye",
+    "alternateName": ["degoke", "Adegoke Adewoye"],
+    "jobTitle": "Senior Backend & Applied AI Engineer · Health AI Researcher",
+    "email": "degokeadewoye@gmail.com",
+    "description": "Senior backend engineer and health AI researcher in Lagos, Nigeria — building FHIR-native healthcare interoperability, clinical AI workflows, distributed systems, and digital health infrastructure at Boolbyte.",
+    "location": {
+      "locality": "Lagos",
+      "region": "Lagos",
+      "regionCode": "LA",
+      "country": "Nigeria",
+      "countryCode": "NG"
+    },
+    "knowsAbout": [
+      "Backend Engineering",
+      "Healthcare Engineering",
+      "Health AI Research",
+      "Applied Artificial Intelligence",
+      "FHIR",
+      "Healthcare Interoperability",
+      "Clinical Workflows",
+      "Digital Health",
+      "Healthtech",
+      "Distributed Systems",
+      "Cloud Infrastructure",
+      "Fintech Infrastructure",
+      "Open Source Healthcare"
+    ],
+    "worksFor": {
+      "name": "Boolbyte",
+      "url": "https://boolbyte.com"
+    },
+    "memberOf": [
+      {
+        "name": "Healthcare Foundry Africa",
+        "url": "https://www.linkedin.com/company/healthcare-foundry-africa"
+      }
+    ],
+    "keywords": [
+      "Adegoke Adewoye",
+      "degoke",
+      "healthcare engineer",
+      "healthcare engineer Nigeria",
+      "healthcare engineer Lagos",
+      "health AI researcher",
+      "health AI researcher Nigeria",
+      "health AI researcher Lagos",
+      "FHIR engineer",
+      "FHIR interoperability",
+      "healthcare interoperability",
+      "backend engineer",
+      "backend engineer Nigeria",
+      "backend engineer Lagos",
+      "applied AI engineer",
+      "healthtech engineer",
+      "healthtech engineer Nigeria",
+      "digital health Nigeria",
+      "digital health Lagos",
+      "African healthtech",
+      "clinical AI workflows",
+      "FHIR-native",
+      "health AI research",
+      "distributed systems",
+      "cloud infrastructure",
+      "Boolbyte",
+      "Health AI Stack",
+      "Geass",
+      "Healthcare Foundry Africa",
+      "SkyeWallet",
+      "open source healthcare"
+    ],
+    "sameAs": [
+      "https://github.com/degoke",
+      "https://www.linkedin.com/in/degoke",
+      "https://huggingface.co/degoke",
+      "https://x.com/degokeadewoye"
+    ]
+  },
+  "pages": {
+    "index": {
+      "path": "/",
+      "title": "Adegoke Adewoye — Healthcare Backend Engineer & Health AI Researcher · Lagos, Nigeria",
+      "description": "Adegoke Adewoye is a senior backend engineer and health AI researcher in Lagos, Nigeria — building FHIR-native interoperability, clinical AI workflows, and digital healthcare infrastructure at Boolbyte.",
+      "ogType": "profile",
+      "keywords": [
+        "Adegoke Adewoye",
+        "healthcare engineer Lagos",
+        "healthcare engineer Nigeria",
+        "health AI researcher Lagos",
+        "FHIR engineer",
+        "healthcare interoperability",
+        "backend engineer Nigeria",
+        "backend engineer Lagos",
+        "healthtech engineer",
+        "digital health Nigeria",
+        "applied AI healthcare",
+        "Boolbyte"
+      ]
+    },
+    "work": {
+      "path": "/work.html",
+      "title": "Work — Adegoke Adewoye · Healthcare, FHIR & AI Projects",
+      "description": "Healthcare and AI work by Adegoke Adewoye in Lagos, Nigeria: FHIR-native Health AI Stack, Boolbyte clinical AI, Medplum interoperability, Geass cloud infra, SkyeWallet fintech, and Healthcare Foundry Africa.",
+      "ogType": "website",
+      "keywords": [
+        "Adegoke Adewoye work",
+        "health AI researcher Nigeria",
+        "FHIR projects",
+        "healthcare interoperability engineer",
+        "Boolbyte",
+        "Health AI Stack",
+        "Medplum FHIR",
+        "Geass",
+        "SkyeWallet",
+        "healthtech projects Lagos",
+        "open source healthcare"
+      ]
+    },
+    "writing": {
+      "path": "/writing.html",
+      "title": "Writing — Adegoke Adewoye · Backend, Healthtech & AI",
+      "description": "Essays and notes by Adegoke Adewoye on backend systems, FHIR and healthcare interoperability, healthtech infrastructure, applied AI, and building reliable software in production.",
+      "ogType": "website",
+      "keywords": [
+        "Adegoke Adewoye writing",
+        "healthtech essays Nigeria",
+        "FHIR interoperability",
+        "backend engineering blog",
+        "health AI research",
+        "applied AI",
+        "distributed systems",
+        "digital health Lagos"
+      ]
+    }
+  }
+}
