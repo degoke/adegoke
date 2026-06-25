@@ -84,6 +84,13 @@ Then open `http://localhost:8080`.
    - Framework preset: `None`
    - Build command: leave empty
    - Build output directory: `/`
+4. Add a build environment variable (Production and Preview):
+   - Name: `SKIP_DEPENDENCY_INSTALL`
+   - Value: `1`
+
+Cloudflare auto-installs from `package.json` and `requirements.txt` when it finds them. This site is built locally with `npm run check` before push, so skip that step on deploy.
+
+No build command is required on Cloudflare.
 
 ### GitHub Pages
 
