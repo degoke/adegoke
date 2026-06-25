@@ -9,7 +9,7 @@ __pycache__/
 venv/
 
 # Local source assets (not for the site)
-images/portrait-source.*
+public/images/portrait-source.*
 
 # OS
 .DS_Store

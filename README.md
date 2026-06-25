@@ -2,22 +2,29 @@
 
 Simple static personal site for Adegoke Adewoye.
 
+## Project layout
+
+- `public/` — deployable site (HTML, CSS, images, built posts, robots.txt, sitemap.xml)
+- `posts/*.md` — post source files (markdown)
+- `scripts/` — build and SEO tooling
+- `site.config.json` — site metadata and SEO config
+
 ## Pages
 
-- `index.html` -> Home
-- `work.html` -> Work, experience, and projects
-- `writing.html` -> Writing page
-- `posts/*.html` -> Individual posts (built from markdown)
+- `public/index.html` → Home
+- `public/work.html` → Work, experience, and projects
+- `public/writing.html` → Writing page
+- `public/posts/*.html` → Individual posts (built from markdown)
 
 ## Edit content
 
 Update these files directly:
 
-- `index.html` for the home intro and social links
-- `work.html` for work, experience, and projects
-- `writing.html` for blog post titles and links
+- `public/index.html` for the home intro and social links
+- `public/work.html` for work, experience, and projects
+- `public/writing.html` for blog post titles and links
 - `posts/*.md` for post content in markdown
-- `images/portrait.png` is the portrait shown on the site. To re-process from a new photo, add a local-only `images/portrait-source.jpg` and run `python3 scripts/process-portrait.py`
+- `public/images/portrait.png` is the portrait shown on the site. To re-process from a new photo, add a local-only `public/images/portrait-source.jpg` and run `python3 scripts/process-portrait.py`
 
 ### Adding or editing posts
 
@@ -42,7 +49,7 @@ python3 -m pip install markdown
 python3 scripts/build-posts.py
 ```
 
-3. Add a link in `writing.html` pointing to `./posts/your-slug.html`.
+3. Add a link in `public/writing.html` pointing to `./posts/your-slug.html`.
 
 Posts are plain static HTML — no JavaScript required at runtime. The build step only runs when you change markdown.
 
@@ -65,11 +72,8 @@ npm run format
 
 ## Run locally
 
-Because this is a plain static site, you can open `index.html` directly in a
-browser, or run a tiny local server:
-
 ```bash
-python3 -m http.server 8080
+npm run serve
 ```
 
 Then open `http://localhost:8080`.
@@ -83,7 +87,7 @@ Then open `http://localhost:8080`.
 3. Use these settings:
    - Framework preset: `None`
    - Build command: leave empty
-   - Build output directory: `/`
+   - Build output directory: `/public`
 4. Add a build environment variable (Production and Preview):
    - Name: `SKIP_DEPENDENCY_INSTALL`
    - Value: `1`
@@ -94,8 +98,4 @@ No build command is required on Cloudflare.
 
 ### GitHub Pages
 
-1. Push this folder to a GitHub repo.
-2. In GitHub, open `Settings -> Pages`.
-3. Set the source to deploy from your default branch and the `/ (root)` folder.
-
-No build step is required.
+GitHub Pages only publishes from `/` or `/docs` by default. Use Cloudflare Pages with `/public` as the output directory, or copy `public/` contents to a branch/folder GitHub can serve.

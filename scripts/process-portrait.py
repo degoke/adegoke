@@ -10,9 +10,10 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLIC = ROOT / "public"
 # Local-only raw photo (gitignored). Writes the committed site asset.
-SRC = ROOT / "images" / "portrait-source.jpg"
-DST = ROOT / "images" / "portrait.png"
+SRC = PUBLIC / "images" / "portrait-source.jpg"
+DST = PUBLIC / "images" / "portrait.png"
 
 # Must match --bg in styles.css
 SITE_BG = (240, 238, 230)  # #f0eee6

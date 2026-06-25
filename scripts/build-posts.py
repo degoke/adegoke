@@ -27,7 +27,9 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).resolve().parent.parent
+PUBLIC = ROOT / "public"
 POSTS_DIR = ROOT / "posts"
+POSTS_OUT = PUBLIC / "posts"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from seo import load_config, render_seo_head  # noqa: E402
@@ -134,7 +136,8 @@ def build_post(md_path: Path, config: dict) -> None:
 
     content_html = indent_html(markdown.markdown(body, extensions=["smarty", "sane_lists"]))
 
-    html_path = POSTS_DIR / f"{slug}.html"
+    html_path = POSTS_OUT / f"{slug}.html"
+    POSTS_OUT.mkdir(parents=True, exist_ok=True)
     html_path.write_text(
         TEMPLATE.format(
             seo=seo,
@@ -158,7 +161,7 @@ def main() -> None:
 
     import subprocess
 
-    portrait_source = ROOT / "images" / "portrait-source.jpg"
+    portrait_source = PUBLIC / "images" / "portrait-source.jpg"
     portrait_script = ROOT / "scripts" / "process-portrait.py"
     if portrait_source.exists() and portrait_script.exists():
         subprocess.run([sys.executable, str(portrait_script)], check=True)

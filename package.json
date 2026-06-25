@@ -5,7 +5,8 @@
     "format:check": "prettier --check .",
     "lint:py": "python3 -m ruff check scripts && python3 -m ruff format --check scripts",
     "build": "python3 scripts/build-posts.py",
-    "check": "npm run lint:py && npm run format:check && npm run build"
+    "check": "npm run lint:py && npm run format:check && npm run build",
+    "serve": "python3 -m http.server 8080 --directory public"
   },
   "devDependencies": {
     "prettier": "^3.5.3"

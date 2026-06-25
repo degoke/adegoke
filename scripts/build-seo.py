@@ -9,6 +9,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+PUBLIC = ROOT / "public"
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from seo import absolute_url, load_config, render_seo_head  # noqa: E402
@@ -42,7 +43,7 @@ def write_robots(config: dict) -> None:
             "",
         ]
     )
-    (ROOT / "robots.txt").write_text(content, encoding="utf-8")
+    (PUBLIC / "robots.txt").write_text(content, encoding="utf-8")
     print("Wrote robots.txt")
 
 
@@ -83,7 +84,7 @@ def write_sitemap(config: dict) -> None:
             "",
         ]
     )
-    (ROOT / "sitemap.xml").write_text(content, encoding="utf-8")
+    (PUBLIC / "sitemap.xml").write_text(content, encoding="utf-8")
     print("Wrote sitemap.xml")
 
 
@@ -107,7 +108,7 @@ def main() -> None:
             og_type=page.get("ogType", "website"),
             keywords=page.get("keywords"),
         )
-        inject_seo(ROOT / filename, seo_block)
+        inject_seo(PUBLIC / filename, seo_block)
 
     write_robots(config)
     write_sitemap(config)
