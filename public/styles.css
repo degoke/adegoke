@@ -613,7 +613,13 @@ a:hover {
   }
 
   .masthead {
+    justify-content: center;
     padding-bottom: 2.2rem;
+    text-align: center;
+  }
+
+  .name {
+    width: 100%;
   }
 
   .site-nav {
