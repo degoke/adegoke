@@ -46,6 +46,23 @@ python3 scripts/build-posts.py
 
 Posts are plain static HTML — no JavaScript required at runtime. The build step only runs when you change markdown.
 
+## Before you push
+
+Run lint, format checks, and the build locally:
+
+```bash
+pip install -r requirements.txt
+npm install
+npm run check
+```
+
+To auto-fix formatting:
+
+```bash
+python3 -m ruff format scripts
+npm run format
+```
+
 ## Run locally
 
 Because this is a plain static site, you can open `index.html` directly in a
