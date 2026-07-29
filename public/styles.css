@@ -317,6 +317,52 @@ a:hover {
   margin: 0;
 }
 
+.entry-name {
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: var(--text-title);
+  font-weight: 600;
+  line-height: var(--leading-heading);
+  letter-spacing: -0.008em;
+}
+
+.entry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.1rem;
+  margin: 0.45rem 0 0;
+}
+
+.entry-resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+
+.entry-resource-link:hover {
+  color: var(--accent);
+}
+
+.entry-resource-link .entry-link-icon {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+
+.entry-links + p,
+.entry-links + .entry-meta {
+  margin-top: 0.55rem;
+}
+
+.entry-meta + p {
+  margin-top: 0.55rem;
+}
+
 .entry-link {
   display: inline-flex;
   align-items: center;
