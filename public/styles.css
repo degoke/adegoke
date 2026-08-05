@@ -259,7 +259,13 @@ a:hover {
 }
 
 .chapter-home-list {
-  padding-top: 1.7rem;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.page-home .intro {
+  padding-bottom: 2.25rem;
 }
 
 .chapter-body p {
@@ -691,6 +697,10 @@ a:hover {
     grid-template-columns: 1fr;
     gap: 1.75rem;
     padding-bottom: 4.3rem;
+  }
+
+  .page-home .intro {
+    padding-bottom: 2rem;
   }
 
   .page-home .intro-photo {
