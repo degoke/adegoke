@@ -450,11 +450,39 @@ a:hover {
   border-top: none;
 }
 
-.summary-item:hover .summary-title,
-.writing-entry:hover .writing-entry-title {
+.summary-item-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  font-weight: 500;
+  line-height: var(--leading-heading);
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+
+.summary-item-title:hover {
   color: var(--accent);
 }
 
+.summary-inline-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 0.14em;
+  transition:
+    color 140ms ease,
+    text-decoration-color 140ms ease;
+}
+
+.summary-inline-link:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.summary-item-title .entry-link-icon,
 .summary-title .entry-link-icon {
   width: 0.72rem;
   height: 0.72rem;
@@ -462,6 +490,10 @@ a:hover {
 
 .summary-copy {
   color: var(--text);
+}
+
+.writing-entry:hover .writing-entry-title {
+  color: var(--accent);
 }
 
 .summary-title,
