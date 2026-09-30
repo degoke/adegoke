@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1b1917" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <!-- seo:start -->
     <title>Coming soon — Adegoke Adewoye</title>
     <meta
@@ -68,26 +70,29 @@
       }
     </script>
     <!-- seo:end -->
-    <link rel="stylesheet" href="../styles.css?v=25" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css?v=32" />
   </head>
   <body>
     <main class="page">
-      <header class="masthead">
-        <p class="name">Adegoke Adewoye</p>
-        <nav class="site-nav" aria-label="Primary">
+      <header class="topbar">
+        <a class="mark" href="../index.html" aria-label="Adegoke Adewoye, home">A</a>
+        <nav class="nav" aria-label="Primary">
           <a href="../index.html">Home</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
           <a href="../work.html">Work</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
           <a href="../writing.html" aria-current="page">Writing</a>
         </nav>
       </header>
 
       <nav class="post-nav" aria-label="Post navigation">
-        <a class="post-back" href="../writing.html">
-          <svg class="post-back-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M15 18l-6-6 6-6" />
-          </svg>
-          <span class="post-back-label">Back to posts</span>
-        </a>
+        <a class="post-back" href="../writing.html">Back to posts</a>
       </nav>
 
       <article class="post">

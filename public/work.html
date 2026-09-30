@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1b1917" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <!-- seo:start -->
-    <title>Work — Adegoke Adewoye · Healthcare, FHIR &amp; AI Projects</title>
+    <title>Projects — Adegoke Adewoye</title>
     <meta
       name="description"
-      content="Healthcare and AI work by Adegoke Adewoye in Lagos, Nigeria: HAIStack, HAIMed research, Preffo, Boolbyte clinical AI, Medplum interoperability, Geass and Outpost cloud infra, SkyeWallet fintech, and Healthcare Foundry Africa."
+      content="Things I&#x27;ve built: Preffo, Tronvent, Geass, HAIFHIR, and StateShift."
     />
     <meta name="author" content="Adegoke Adewoye" />
     <meta
@@ -25,13 +27,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Adegoke Adewoye" />
     <meta property="og:locale" content="en_US" />
-    <meta
-      property="og:title"
-      content="Work — Adegoke Adewoye · Healthcare, FHIR &amp; AI Projects"
-    />
+    <meta property="og:title" content="Projects — Adegoke Adewoye" />
     <meta
       property="og:description"
-      content="Healthcare and AI work by Adegoke Adewoye in Lagos, Nigeria: HAIStack, HAIMed research, Preffo, Boolbyte clinical AI, Medplum interoperability, Geass and Outpost cloud infra, SkyeWallet fintech, and Healthcare Foundry Africa."
+      content="Things I&#x27;ve built: Preffo, Tronvent, Geass, HAIFHIR, and StateShift."
     />
     <meta property="og:url" content="https://adegoke.xyz/work.html" />
     <meta property="og:image" content="https://adegoke.xyz/images/portrait.png" />
@@ -39,13 +38,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@degokeadewoye" />
     <meta name="twitter:creator" content="@degokeadewoye" />
-    <meta
-      name="twitter:title"
-      content="Work — Adegoke Adewoye · Healthcare, FHIR &amp; AI Projects"
-    />
+    <meta name="twitter:title" content="Projects — Adegoke Adewoye" />
     <meta
       name="twitter:description"
-      content="Healthcare and AI work by Adegoke Adewoye in Lagos, Nigeria: HAIStack, HAIMed research, Preffo, Boolbyte clinical AI, Medplum interoperability, Geass and Outpost cloud infra, SkyeWallet fintech, and Healthcare Foundry Africa."
+      content="Things I&#x27;ve built: Preffo, Tronvent, Geass, HAIFHIR, and StateShift."
     />
     <meta name="twitter:image" content="https://adegoke.xyz/images/portrait.png" />
     <meta name="twitter:image:alt" content="Adegoke Adewoye" />
@@ -53,14 +49,14 @@
       {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        "name": "Work — Adegoke Adewoye · Healthcare, FHIR & AI Projects",
-        "description": "Healthcare and AI work by Adegoke Adewoye in Lagos, Nigeria: HAIStack, HAIMed research, Preffo, Boolbyte clinical AI, Medplum interoperability, Geass and Outpost cloud infra, SkyeWallet fintech, and Healthcare Foundry Africa.",
+        "name": "Projects — Adegoke Adewoye",
+        "description": "Things I've built: Preffo, Tronvent, Geass, HAIFHIR, and StateShift.",
         "url": "https://adegoke.xyz/work.html",
         "mainEntity": {
           "@type": "Person",
           "name": "Adegoke Adewoye",
-          "jobTitle": "Senior Backend & Applied AI Engineer · Health AI Researcher",
-          "description": "Senior backend engineer and health AI researcher in Lagos, Nigeria — building FHIR-native healthcare interoperability, clinical AI workflows, distributed systems, and digital health infrastructure at Boolbyte.",
+          "jobTitle": "Software Engineer",
+          "description": "Lagos-based software engineer working across distributed systems, infrastructure, applied AI, and health AI research.",
           "url": "https://adegoke.xyz/",
           "image": "https://adegoke.xyz/images/portrait.png",
           "email": "mailto:degokeadewoye@gmail.com",
@@ -83,369 +79,157 @@
             "name": "Lagos, Nigeria"
           },
           "knowsAbout": [
-            "Backend Engineering",
-            "Healthcare Engineering",
-            "Health AI Research",
-            "Applied Artificial Intelligence",
-            "FHIR",
-            "Healthcare Interoperability",
-            "Clinical Workflows",
-            "Digital Health",
-            "Healthtech",
             "Distributed Systems",
-            "Cloud Infrastructure",
-            "Fintech Infrastructure",
-            "Open Source Healthcare"
+            "Infrastructure",
+            "Applied Artificial Intelligence",
+            "Health AI Research",
+            "FHIR",
+            "Healthcare Operations",
+            "Payments",
+            "Go",
+            "Rust",
+            "TypeScript",
+            "Python",
+            "Open Source"
           ],
           "worksFor": {
             "@type": "Organization",
             "name": "Boolbyte",
             "url": "https://boolbyte.com"
-          },
-          "memberOf": [
-            {
-              "@type": "Organization",
-              "name": "Healthcare Foundry Africa",
-              "url": "https://www.linkedin.com/company/healthcare-foundry-africa"
-            }
-          ]
+          }
         }
       }
     </script>
     <!-- seo:end -->
-    <link rel="stylesheet" href="./styles.css?v=26" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=32" />
   </head>
   <body>
     <main class="page">
-      <header class="masthead">
-        <p class="name">Adegoke Adewoye</p>
-        <nav class="site-nav" aria-label="Primary">
+      <header class="topbar">
+        <a class="mark" href="./index.html" aria-label="Adegoke Adewoye, home">A</a>
+        <nav class="nav" aria-label="Primary">
           <a href="./index.html">Home</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
           <a href="./work.html" aria-current="page">Work</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
           <a href="./writing.html">Writing</a>
         </nav>
       </header>
 
-      <section class="intro intro-writing" id="focus">
-        <div class="intro-copy intro-copy-writing">
-          <p class="intro-note">Work</p>
-          <p class="intro-text">
-            Backend systems, applied AI, FHIR interoperability, health AI research, and
-            infrastructure for payments, digital health, and cloud platforms.
-          </p>
-        </div>
-      </section>
-
-      <section class="chapter" id="health-and-ai">
-        <p class="chapter-label">Health &amp; AI</p>
-        <div class="chapter-body">
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Boolbyte</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://boolbyte.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>Website</span>
-              </a>
-            </p>
-            <p>
-              I am building toward an operating system for intelligent connected care and leading
-              health AI research at Boolbyte — an AI operations layer that connects to existing
-              clinical systems, runs healthcare workflows in the background, and surfaces only what
-              needs human judgment across intake, scheduling, referrals, documentation, and
-              follow-up.
-            </p>
-          </div>
-
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">HAIStack</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://github.com/degoke/HAIStack#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GitHub</span>
-              </a>
-            </p>
-            <p>
-              Health AI Stack is an open-source modular foundation for FHIR-native tooling,
-              structured AI workflows, sync engines, and local-first healthcare runtimes — the
-              infrastructure layer I use to standardize data, connect systems, and bring
-              intelligence into care environments.
-            </p>
-          </div>
-
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">HAIMed</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://github.com/degoke/haimed#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GitHub</span>
-              </a>
-            </p>
-            <p class="entry-meta">Research</p>
-            <p>
-              A research testbed for general-purpose, local-first multimodal medical AI — studying
-              how compact models can understand clinical text, health records, laboratory documents,
-              radiographs, and CT within limited compute, memory, and connectivity.
-            </p>
-          </div>
-
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Medplum</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://github.com/medplum/medplum#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GitHub</span>
-              </a>
-            </p>
-            <p>
-              Open-source contributor to Medplum’s FHIR-native healthcare platform — work on the
-              agent integration layer that connects clinical systems over MLLP, TCP, and related
-              protocols.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="chapter" id="applied-ai">
-        <p class="chapter-label">Applied AI</p>
-        <div class="chapter-body">
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Preffo</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://usepreffo.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>Website</span>
-              </a>
-            </p>
-            <p>
-              A personal AI workspace for job applications and interview preparation — build one
-              evidence-backed dossier, generate tailored CVs and cover letters for each role, track
-              applications in dedicated campaigns, and rehearse the interview stages you are likely
-              to face.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="chapter" id="cloud-and-infra">
-        <p class="chapter-label">Cloud &amp; Infra</p>
-        <div class="chapter-body">
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Geass</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://github.com/degoke/geass#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GitHub</span>
-              </a>
-            </p>
-            <p>
-              A self-hosted platform for running a managed cloud experience on your own VPS or
-              bare-metal — built on K3s for apps, databases, and networking you control, without
-              giving up control over your stack.
-            </p>
-          </div>
-
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Outpost</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://github.com/degoke/outpost#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GitHub</span>
-              </a>
-              <a
-                class="entry-resource-link"
-                href="https://outpost.adegoke.xyz"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>Website</span>
-              </a>
-            </p>
-            <p>
-              Turns a remote Linux host into a shared development environment you control from your
-              local terminal — run Docker Compose, Kubernetes with kind, and Linux machines on the
-              server without a local Docker or VM stack.
-            </p>
-          </div>
-
-          <!-- <div class="entry">
-            <p class="entry-heading">
-              <a
-                class="entry-link"
-                href="https://github.com/degoke/geass#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GeassCloud</span>
-              </a>
-            </p>
-            <p>
-              The managed layer on top of Geass — making deploy, scale, and day-two operations feel
-              like a cloud product while the workloads stay on infrastructure you own and operate.
-            </p>
-          </div> -->
-        </div>
-      </section>
-
-      <section class="chapter" id="fintech-and-web3">
-        <p class="chapter-label">Fintech &amp; Web3</p>
-        <div class="chapter-body">
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">SkyeWallet</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://skyewallet.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>Website</span>
-              </a>
-            </p>
-            <p>
-              From founding engineer through lead engineer, I spent five years helping build and
-              scale secure financial infrastructure — shaping high-concurrency systems for
-              reliability, transaction integrity, and cross-border payments across African markets.
-            </p>
-          </div>
-
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Tronvent</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://github.com/degoke/tronvent#readme"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>GitHub</span>
-              </a>
-              <a
-                class="entry-resource-link"
-                href="https://tronvent.adegoke.xyz"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>Website</span>
-              </a>
-            </p>
-            <p>
-              A self-hosted TRON chain monitor that polls TronGrid for TRX and TRC-20 activity on
-              your addresses and delivers signed webhooks — no full node required.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="chapter" id="ecosystem-community">
-        <p class="chapter-label">Ecosystem &amp; Community</p>
-        <div class="chapter-body">
-          <div class="entry">
-            <p class="entry-heading">
-              <span class="entry-name">Healthcare Foundry Africa</span>
-            </p>
-            <p class="entry-links">
-              <a
-                class="entry-resource-link"
-                href="https://www.linkedin.com/company/healthcare-foundry-africa"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg class="entry-link-icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 17L17 7M17 7H9M17 7v8" />
-                </svg>
-                <span>LinkedIn</span>
-              </a>
-            </p>
-            <p>
-              As founder and community lead, I run programs that help digital health builders,
-              students, and researchers find a stronger footing across the African healthtech
-              ecosystem — through mentorship, competitions like Nurseathon, and practical support
-              for emerging teams.
-            </p>
-          </div>
-        </div>
+      <section aria-labelledby="built-heading">
+        <h1 class="kicker" id="built-heading">Things I've built</h1>
+        <p class="copy">
+          I mostly write
+          <span class="after-comma"><strong>Go, Rust, TypeScript, and Python</strong></span>
+          depending on what I'm building.
+        </p>
+        <ul class="projects">
+          <li>
+            <a class="project" href="https://usepreffo.com" target="_blank" rel="noreferrer">
+              <img
+                class="project-icon"
+                src="./images/marks/3ade.png"
+                alt=""
+                width="22"
+                height="22"
+              />
+              <span class="repo">
+                <span class="org">3ADE</span>
+                <span class="slash">/</span>
+                <span class="name">Preffo</span>
+              </span>
+              <span class="kind">Product</span>
+              <span class="project-desc">Preference infrastructure for software</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://tronvent.com" target="_blank" rel="noreferrer">
+              <img
+                class="project-icon"
+                src="./images/marks/3ade.png"
+                alt=""
+                width="22"
+                height="22"
+              />
+              <span class="repo">
+                <span class="org">3ADE</span>
+                <span class="slash">/</span>
+                <span class="name">Tronvent</span>
+              </span>
+              <span class="kind">Open Source</span>
+              <span class="project-desc">Webhook and event infrastructure for TRON</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="project"
+              href="https://github.com/degoke/geass"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="project-icon"
+                src="./images/marks/3ade.png"
+                alt=""
+                width="22"
+                height="22"
+              />
+              <span class="repo">
+                <span class="org">3ADE</span>
+                <span class="slash">/</span>
+                <span class="name">Geass</span>
+              </span>
+              <span class="kind">Open Source</span>
+              <span class="project-desc">Run applications on your own infrastructure</span>
+            </a>
+          </li>
+          <li>
+            <div class="project">
+              <img
+                class="project-icon"
+                src="./images/marks/haihq.png"
+                alt=""
+                width="22"
+                height="22"
+              />
+              <span class="repo">
+                <span class="org">HAIHQ</span>
+                <span class="slash">/</span>
+                <span class="name">Haifhir</span>
+              </span>
+              <span class="kind">Open Source / Research</span>
+              <span class="project-desc">
+                Reactive FHIR infrastructure for applications and AI agents
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="project">
+              <img
+                class="project-icon"
+                src="./images/marks/haihq.png"
+                alt=""
+                width="22"
+                height="22"
+              />
+              <span class="repo">
+                <span class="org">HAIHQ</span>
+                <span class="slash">/</span>
+                <span class="name">Stateshift</span>
+              </span>
+              <span class="kind">Research</span>
+              <span class="project-desc">
+                Stress-testing clinical AI agents under changing state
+              </span>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

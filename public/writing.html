@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1b1917" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <!-- seo:start -->
     <title>Writing — Adegoke Adewoye · Backend, Healthtech &amp; AI</title>
     <meta
@@ -53,8 +55,8 @@
         "author": {
           "@type": "Person",
           "name": "Adegoke Adewoye",
-          "jobTitle": "Senior Backend & Applied AI Engineer · Health AI Researcher",
-          "description": "Senior backend engineer and health AI researcher in Lagos, Nigeria — building FHIR-native healthcare interoperability, clinical AI workflows, distributed systems, and digital health infrastructure at Boolbyte.",
+          "jobTitle": "Software Engineer",
+          "description": "Lagos-based software engineer working across distributed systems, infrastructure, applied AI, and health AI research.",
           "url": "https://adegoke.xyz/",
           "image": "https://adegoke.xyz/images/portrait.png",
           "email": "mailto:degokeadewoye@gmail.com",
@@ -76,70 +78,60 @@
             "name": "Lagos, Nigeria"
           },
           "knowsAbout": [
-            "Backend Engineering",
-            "Healthcare Engineering",
-            "Health AI Research",
-            "Applied Artificial Intelligence",
-            "FHIR",
-            "Healthcare Interoperability",
-            "Clinical Workflows",
-            "Digital Health",
-            "Healthtech",
             "Distributed Systems",
-            "Cloud Infrastructure",
-            "Fintech Infrastructure",
-            "Open Source Healthcare"
+            "Infrastructure",
+            "Applied Artificial Intelligence",
+            "Health AI Research",
+            "FHIR",
+            "Healthcare Operations",
+            "Payments",
+            "Go",
+            "Rust",
+            "TypeScript",
+            "Python",
+            "Open Source"
           ],
           "worksFor": {
             "@type": "Organization",
             "name": "Boolbyte",
             "url": "https://boolbyte.com"
-          },
-          "memberOf": [
-            {
-              "@type": "Organization",
-              "name": "Healthcare Foundry Africa",
-              "url": "https://www.linkedin.com/company/healthcare-foundry-africa"
-            }
-          ]
+          }
         }
       }
     </script>
     <!-- seo:end -->
-    <link rel="stylesheet" href="./styles.css?v=25" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=32" />
   </head>
   <body>
     <main class="page">
-      <header class="masthead">
-        <p class="name">Adegoke Adewoye</p>
-        <nav class="site-nav" aria-label="Primary">
+      <header class="topbar">
+        <a class="mark" href="./index.html" aria-label="Adegoke Adewoye, home">A</a>
+        <nav class="nav" aria-label="Primary">
           <a href="./index.html">Home</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
           <a href="./work.html">Work</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
           <a href="./writing.html" aria-current="page">Writing</a>
         </nav>
       </header>
 
-      <section class="intro intro-writing">
-        <div class="intro-copy intro-copy-writing">
-          <p class="intro-note">Writing</p>
-          <p class="intro-text">
-            Notes on backend systems, infrastructure, digital health, and AI.
-          </p>
-        </div>
-      </section>
-
-      <section class="chapter">
-        <p class="chapter-label">Posts</p>
-        <div class="chapter-body">
-          <div class="writing-entries">
-            <a class="writing-entry" href="./posts/coming-soon.html">
-              <span class="writing-entry-title">Coming soon</span>
-              <span class="writing-entry-meta">
-                Writing, backend systems, healthtech, applied AI
-              </span>
+      <section aria-labelledby="writing-heading">
+        <h1 class="kicker" id="writing-heading">Writing</h1>
+        <p class="copy">Notes on backend systems, infrastructure, digital health, and AI.</p>
+        <ul class="index-list">
+          <li>
+            <a class="index-row" href="./posts/coming-soon.html">
+              <img class="index-icon" src="./favicon.svg" alt="" width="22" height="22" />
+              <span class="index-title">Coming soon</span>
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
