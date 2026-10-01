@@ -29,6 +29,23 @@ def absolute_image(config: dict[str, Any], image_path: str | None) -> str:
     return absolute_url(config, path)
 
 
+def image_object(config: dict[str, Any], image_path: str | None = None) -> dict[str, Any]:
+    url = absolute_image(config, image_path)
+    entity: dict[str, Any] = {
+        "@type": "ImageObject",
+        "url": url,
+        "contentUrl": url,
+        "caption": config["person"]["name"],
+    }
+    width = config.get("defaultImageWidth")
+    height = config.get("defaultImageHeight")
+    if width:
+        entity["width"] = width
+    if height:
+        entity["height"] = height
+    return entity
+
+
 def keywords_string(keywords: list[str]) -> str:
     return ", ".join(keywords)
 
@@ -42,7 +59,7 @@ def build_person_entity(config: dict[str, Any], *, person_id: str | None = None)
         "jobTitle": person["jobTitle"],
         "description": person["description"],
         "url": site_url,
-        "image": absolute_image(config, None),
+        "image": image_object(config),
         "email": f"mailto:{person['email']}",
         "sameAs": person["sameAs"],
     }
@@ -245,6 +262,18 @@ def render_seo_head(
             f'    <meta name="twitter:image:alt" content="{escaped_author}" />',
         ]
     )
+
+    image_width = config.get("defaultImageWidth")
+    image_height = config.get("defaultImageHeight")
+    image_type = config.get("defaultImageType")
+    if image_width:
+        lines.append(f'    <meta property="og:image:width" content="{image_width}" />')
+    if image_height:
+        lines.append(f'    <meta property="og:image:height" content="{image_height}" />')
+    if image_type:
+        escaped_type = html.escape(str(image_type), quote=True)
+        lines.append(f'    <meta property="og:image:type" content="{escaped_type}" />')
+    lines.append(f'    <link rel="image_src" href="{escaped_image}" />')
 
     if og_type == "profile":
         lines.append('    <meta property="profile:username" content="degoke" />')

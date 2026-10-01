@@ -42,8 +42,8 @@ TEMPLATE = """<!DOCTYPE html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1b1917" />
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f0eee6" />
+    <link rel="icon" href="../favicon.png" type="image/png" />
     <!-- seo:start -->
 {seo}
     <!-- seo:end -->
@@ -53,16 +53,16 @@ TEMPLATE = """<!DOCTYPE html>
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles.css?v=33" />
+    <link rel="stylesheet" href="../styles.css?v=39" />
   </head>
   <body>
     <main class="page">
       <header class="topbar">
-        <a class="mark" href="../index.html" aria-label="Adegoke Adewoye, home">A</a>
+        <a class="mark" href="../index.html" aria-label="Adegoke Adewoye, home">
+          <img src="../images/portrait.png" alt="" width="1080" height="1442" />
+        </a>
         <nav class="nav" aria-label="Primary">
           <a href="../index.html">Home</a>
-          <span class="nav-slash" aria-hidden="true">/</span>
-          <a href="../work.html">Work</a>
           <span class="nav-slash" aria-hidden="true">/</span>
           <a href="../writing.html" aria-current="page">Writing</a>
         </nav>
