@@ -93,7 +93,6 @@ def main() -> None:
 
     page_map = {
         "index.html": ("index", "home"),
-        "work.html": ("work", "work"),
         "writing.html": ("writing", "writing"),
     }
 
