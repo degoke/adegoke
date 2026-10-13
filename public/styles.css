@@ -495,7 +495,7 @@ a.index-row:hover .index-title {
 
 @media (max-width: 640px) {
   :root {
-    --copy: 1.42rem;
+    --copy: 1.3rem;
   }
 
   .page {

@@ -125,7 +125,7 @@ def build_post(md_path: Path, config: dict) -> None:
     description = front_matter.get("description", f"Writing by Adegoke Adewoye — {title}.")
     date_published = front_matter.get("date")
     image = front_matter.get("image")
-    page_title = f"{title} — Adegoke Adewoye"
+    page_title = f"{title} | Adegoke Adewoye"
 
     seo = render_seo_head(
         config=config,
