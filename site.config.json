@@ -104,7 +104,7 @@
   "pages": {
     "index": {
       "path": "/",
-      "title": "Adegoke Adewoye — Healthcare Backend Engineer & Health AI Researcher · Lagos, Nigeria",
+      "title": "Adegoke Adewoye | Healthcare Backend Engineer & Health AI Researcher · Lagos, Nigeria",
       "description": "Adegoke Adewoye is a senior backend engineer and health AI researcher in Lagos, Nigeria — building FHIR-native interoperability, clinical AI workflows, and digital healthcare infrastructure at Boolbyte, across distributed systems, cloud infrastructure, and applied AI.",
       "ogType": "profile",
       "keywords": [
@@ -141,7 +141,7 @@
     },
     "writing": {
       "path": "/writing.html",
-      "title": "Writing — Adegoke Adewoye · Backend, Healthtech & AI",
+      "title": "Writing | Adegoke Adewoye · Backend, Healthtech & AI",
       "description": "Essays and notes by Adegoke Adewoye on backend systems, FHIR and healthcare interoperability, healthtech infrastructure, applied AI, and building reliable software in production.",
       "ogType": "website",
       "keywords": [
